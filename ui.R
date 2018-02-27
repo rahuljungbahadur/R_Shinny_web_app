@@ -89,6 +89,7 @@ ui <- fluidPage(
     mainPanel(
       plotOutput(outputId = "scatterplot"),
       plotOutput(outputId = "densityplot", height = 300),
+      uiOutput(outputId = "plot_desc"),
       DT::dataTableOutput(outputId = "moviestudio")
     )
   )
